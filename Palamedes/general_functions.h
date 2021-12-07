@@ -1,0 +1,20 @@
+#ifndef GENERAL_FUNCTIONS_H
+#define GENERAL_FUNCTIONS_H
+
+
+enum class COLORS {
+	NEGRO, AZUL, VERDE, AGUAMARINA, ROJO, PURPURA,
+	AMARILLO, BLANCO, GRIS, AZULCLARO, VERDECLARO,
+	AGUAMARINACLARO, ROJOCLARO, PURPURACLARO, AMARILLOCLARO, BLANCOBRILLANTE
+};
+struct VECTOR2I
+{
+	int x;
+	int y;
+};
+
+void gotoxy(short x, short y);
+void paintText(COLORS textColor, COLORS backColor);
+
+#endif // !GENERAL_FUNCTIONS_H
+
